@@ -4,13 +4,13 @@ sudo: false
 addons:
   apt:
     packages:
-      - libsqlite3-dev
-      - libcurl4-openssl-dev
-      - libxml2-dev
-      - libstfl-dev
-      - libjson-c-dev
-      - libncursesw5-dev
-      - asciidoc
+    - libsqlite3-dev
+    - libcurl4-openssl-dev
+    - libxml2-dev
+    - libstfl-dev
+    - libjson-c-dev
+    - libncursesw5-dev
+    - asciidoc
 
 matrix:
   fast_finish: true
