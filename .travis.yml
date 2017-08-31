@@ -1,5 +1,6 @@
 language: cpp
-dist: precise
+dist: trusty
+sudo: false
 
 matrix:
   fast_finish: true
