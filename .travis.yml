@@ -25,6 +25,13 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-4.9
+            - libsqlite3-dev
+            - libcurl4-openssl-dev
+            - libxml2-dev
+            - libstfl-dev
+            - libjson-c-dev
+            - libncursesw5-dev
+            - asciidoc
       env:
         - COMPILER=g++-4.9
         - GCOV=/usr/bin/gcov-4.9
