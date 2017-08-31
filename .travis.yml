@@ -71,7 +71,7 @@ matrix:
         apt:
           sources:
             - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.6
+            - llvm-toolchain-trusty
           packages:
             - clang-3.6
             - *global_deps
@@ -84,7 +84,7 @@ matrix:
         apt:
           sources:
             - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.7
+            - llvm-toolchain-trusty
           packages:
             - clang-3.7
             - *global_deps
@@ -97,7 +97,7 @@ matrix:
         apt:
           sources:
             - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.8
+            - llvm-toolchain-trusty
           packages:
             - clang-3.8
             - *global_deps
@@ -110,8 +110,7 @@ matrix:
         apt:
           sources:
             - ubuntu-toolchain-r-test
-            - sourceline: "deb http://apt.llvm.org/precise/ llvm-toolchain-precise-4.0 main"
-              key_url: "http://apt.llvm.org/llvm-snapshot.gpg.key"
+            - llvm-toolchain-trusty-4.0
           packages:
             - clang-4.0
             - *global_deps
