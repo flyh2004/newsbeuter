@@ -63,44 +63,18 @@ matrix:
       env:
         - COMPILER=g++-7
         - GCOV=/usr/bin/gcov-7
-    - compiler: clang-3.6
+    - compiler: clang-3.9
       os: linux
       addons:
         apt:
           sources:
             - ubuntu-toolchain-r-test
-            - llvm-toolchain-trusty-3.6
+            - llvm-toolchain-trusty-3.9
           packages:
-            - clang-3.6
+            - clang-3.9
             - *global_deps
       env:
-        - COMPILER=clang++-3.6
-        - GCOV=/usr/bin/gcov
-    - compiler: clang-3.7
-      os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-trusty-3.7
-          packages:
-            - clang-3.7
-            - *global_deps
-      env:
-        - COMPILER=clang++-3.7
-        - GCOV=/usr/bin/gcov
-    - compiler: clang-3.8
-      os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-trusty-3.8
-          packages:
-            - clang-3.8
-            - *global_deps
-      env:
-        - COMPILER=clang++-3.8
+        - COMPILER=clang++-3.9
         - GCOV=/usr/bin/gcov
     - compiler: clang-4.0
       os: linux
